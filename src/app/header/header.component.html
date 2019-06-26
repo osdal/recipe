@@ -6,15 +6,15 @@
 
         <div class="navbar-collaplse">
             <ul class="nav navbar-nav">
-                <li><a href="#" (click)="onSelect('recipe')">Рецепты</a></li>
-                <li><a href="#" (click)="onSelect('shoping-list')">Список покупок</a></li>
+                <li routerLinkActive="active"><a  routerLink="/recipes">Рецепты</a></li>
+                <li routerLinkActive="active"><a routerLink="/shoping-list">Список покупок</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown" appDropdown>
-                    <a href="#" class="dropdown-toggle" role="button">Включить <span class="caret"></span></a>
+                    <a style="cursor: pointer" class="dropdown-toggle" role="button">Включить <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Сохранить данные</a></li>
-                        <li><a href="#">Добавить данные</a></li>
+                        <li><a style="cursor: pointer">Сохранить данные</a></li>
+                        <li><a style="cursor: pointer">Добавить данные</a></li>
                     </ul>
                 </li>
             </ul>
